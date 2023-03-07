@@ -242,6 +242,7 @@ class Ui_MainWindow(object):
                               )
         
         self.graphicsView.setScene(self.scene_1)
+        self.graphicsView.fitInView(self.scene_1.sceneRect().adjusted(0,0,10,20),QtCore.Qt.KeepAspectRatio)
         global resize_1
         resize_1 = True
         
@@ -329,6 +330,7 @@ class Ui_MainWindow(object):
         self.scene_2.addEllipse(318-5.5, 264-5.5, 11, 11, pen=QtGui.QPen(QtGui.QColor("black")), brush=QtGui.QBrush(QtGui.QColor("black")))
         
         self.graphicsView_2.setScene(self.scene_2)
+        self.graphicsView_2.fitInView(self.scene_2.sceneRect().adjusted(0,0,10,20),QtCore.Qt.KeepAspectRatio)
         global resize_2
         resize_2 = True
         
